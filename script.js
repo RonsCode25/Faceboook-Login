@@ -1,14 +1,8 @@
 document.querySelector('.file').addEventListener('change', function () {
     const file = this.files[0];
 
-    if (!file.type.match('image/jpeg')) {
-        alert('Please upload a JPEG image.');
-        this.value = '';
-        return;
-    }
-
-    if (!file.type.match('image/jpg')) {
-        alert('Please upload a JPG image.');
+    if (!(file.type.match('image/jpeg') || file.type.match('image/jpg'))) { // Fixed syntax error
+        alert('Please upload a JPEG/JPG image.');
         this.value = '';
         return;
     }
