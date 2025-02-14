@@ -29,7 +29,7 @@
     }
     p{
         margin: 5% 0 0 0;
-        font-size: calc(var(--txtsz)*0.35);
+        font-size: calc(var(--txtsz)*0.3);
     }
     .pic{
         margin: 10% 0 0 0;
