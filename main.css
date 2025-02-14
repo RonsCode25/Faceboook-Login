@@ -1,0 +1,42 @@
+:root{
+    --scrlbr:clamp(8px, 0.85vw, 12px);
+    --txtsz: 30px;
+    --btnlc: blue;
+    --bgc: #1117;
+
+    --screen:flex;
+    --prank:none;
+    --form:flex;
+}
+*{
+    padding:0;
+    margin: 0;
+    letter-spacing: 0.5px;
+    overflow: hidden;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    overflow: hidden;
+
+    &::-webkit-scrollbar{
+        width: var(--scrlbr);
+        height: var(--scrlbr);
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: #777;
+    }
+    &::-webkit-scrollbar-track{
+        background-color: #555;
+    }
+}
+body{
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #000;
+
+}
