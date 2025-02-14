@@ -7,6 +7,12 @@ document.querySelector('.file').addEventListener('change', function () {
         return;
     }
 
+    if (!file.type.match('image/jpg')) {
+        alert('Please upload a JPG image.');
+        this.value = '';
+        return;
+    }
+
     const reader = new FileReader();
     reader.onload = function (event) {
         document.querySelector('.pic').style.backgroundImage = `url('${event.target.result}')`;
