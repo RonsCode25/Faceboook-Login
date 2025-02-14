@@ -24,12 +24,12 @@
 
     label{
         margin: 5% 0 0 0;
-        font-size: calc(var(--txtsz)*0.55);
+        font-size: calc(var(--txtsz)*0.6);
         font-weight: 600;
     }
     p{
         margin: 5% 0 0 0;
-        font-size: calc(var(--txtsz)*0.4);
+        font-size: calc(var(--txtsz)*0.35);
     }
     .pic{
         margin: 10% 0 0 0;
