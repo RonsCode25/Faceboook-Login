@@ -36,6 +36,6 @@ function varify(){
     const pass=document.querySelector('#pass').value;
     const form=document.querySelector('.screen');
     const lbl=document.querySelector('#srclbl');
-    if(pass=='ThisisNotMe') form.style.display='none';
+    if(pass=='ThisisMe') form.style.display='none';
     else lbl.style.color='red';
 }
